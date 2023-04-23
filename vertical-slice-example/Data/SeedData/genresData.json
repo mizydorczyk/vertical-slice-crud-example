@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Literary Fiction"
+  },
+  {
+    "id": 2,
+    "name": "Mystery"
+  },
+  {
+    "id": 3,
+    "name": "Thriller"
+  },
+  {
+    "id": 4,
+    "name": "Horror"
+  },
+  {
+    "id": 5,
+    "name": "Historical"
+  },
+  {
+    "id": 6,
+    "name": "Romance"
+  },
+  {
+    "id": 7,
+    "name": "Western"
+  },
+  {
+    "id": 8,
+    "name": "Speculative Fiction"
+  },
+  {
+    "id": 9,
+    "name": "Science Fiction"
+  },
+  {
+    "id": 10,
+    "name": "Fantasy"
+  },
+  {
+    "id": 11,
+    "name": "Magical Realism"
+  },
+  {
+    "id": 12,
+    "name": "Realist Literature"
+  }
+]

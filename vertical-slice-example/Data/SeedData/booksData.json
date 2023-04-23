@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "publisher": "J. B. Lippincott & Co.",
+    "description": "A classic novel about racial injustice and the loss of innocence in a small Southern town",
+    "releaseDate": "1960-07-11",
+    "genreId": 12,
+    "authorId": 1
+  },
+  {
+    "id": 2,
+    "title": "The Girl with the Dragon Tattoo",
+    "publisher": "Norstedts förlag",
+    "description": "A crime thriller about a journalist and a young computer hacker investigating a wealthy family's dark secrets",
+    "releaseDate": "2005-08-01",
+    "genreId": 2,
+    "authorId": 20
+  },
+  {
+    "id": 3,
+    "title": "The Shining",
+    "publisher": "Doubleday",
+    "description": "A horror novel about a family trapped in a haunted hotel during the winter",
+    "releaseDate": "1977-01-28",
+    "genreId": 4,
+    "authorId": 3
+  },
+  {
+    "id": 4,
+    "title": "Norwegian Wood",
+    "publisher": "Kodansha",
+    "description": "A coming-of-age novel about a young man's love affairs and struggles with loss and mental illness",
+    "releaseDate": "1987-08-28",
+    "genreId": 1,
+    "authorId": 4
+  },
+  {
+    "id": 5,
+    "title": "Murder on the Orient Express",
+    "publisher": "Collins Crime Club",
+    "description": "A classic detective novel about a murder on a luxurious train and Hercule Poirot's investigation",
+    "releaseDate": "1934-01-01",
+    "genreId": 2,
+    "authorId": 5
+  },
+  {
+    "id": 6,
+    "title": "The Da Vinci Code",
+    "publisher": "Doubleday",
+    "description": "A thriller about a symbologist and a cryptologist unraveling a conspiracy involving the Holy Grail and the Catholic Church",
+    "releaseDate": "2003-03-18",
+    "genreId": 8,
+    "authorId": 6
+  },
+  {
+    "id": 7,
+    "title": "The Handmaid's Tale",
+    "publisher": "McClelland and Stewart",
+    "description": "A dystopian novel set in a totalitarian theocracy where women are forced into sexual servitude",
+    "releaseDate": "1985-06-01",
+    "genreId": 8,
+    "authorId": 7
+  },
+  {
+    "id": 8,
+    "title": "The Fellowship of the Ring",
+    "publisher": "Allen & Unwin",
+    "description": "The first volume of J.R.R. Tolkien's epic fantasy series The Lord of the Rings",
+    "releaseDate": "1954-07-29",
+    "genreId": 10,
+    "authorId": 8
+  },
+  {
+    "id": 9,
+    "title": "The Catcher in the Rye",
+    "publisher": "Little, Brown and Company",
+    "description": "A classic coming-of-age novel about a teenage boy named Holden Caulfield, who is struggling with the hypocrisy and phoniness of the adult world",
+    "releaseDate": "1951-01-01",
+    "genreId": 12,
+    "authorId": 9
+  },
+  {
+    "id": 10,
+    "title": "Pride and Prejudice",
+    "publisher": "T. Egerton, Whitehall",
+    "description": "A novel that explores themes of love, marriage, and societal expectations in Georgian-era England.",
+    "releaseDate": "1813-01-28",
+    "genreId": 6,
+    "authorId": 10
+  },
+  {
+    "id": 11,
+    "title": "The Wind-Up Bird Chronicle",
+    "publisher": "Shinchosha",
+    "description": "A surreal novel set in Tokyo that explores themes of war, trauma, and the subconscious.",
+    "releaseDate": "1994-01-01",
+    "genreId": 11,
+    "authorId": 4
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "firstName": "J.K.",
+    "lastName": "Rowling"
+  },
+  {
+    "id": 2,
+    "firstName": "George R.R.",
+    "lastName": "Martin"
+  },
+  {
+    "id": 3,
+    "firstName": "Stephen",
+    "lastName": "King"
+  },
+  {
+    "id": 4,
+    "firstName": "Haruki",
+    "lastName": "Murakami"
+  },
+  {
+    "id": 5,
+    "firstName": "Agatha",
+    "lastName": "Christie"
+  },
+  {
+    "id": 6,
+    "firstName": "Dan",
+    "lastName": "Brown"
+  },
+  {
+    "id": 7,
+    "firstName": "Margaret",
+    "lastName": "Atwood"
+  },
+  {
+    "id": 8,
+    "firstName": "J.R.R.",
+    "lastName": "Tolkien"
+  },
+  {
+    "id": 9,
+    "firstName": "Ernest",
+    "lastName": "Hemingway"
+  },
+  {
+    "id": 10,
+    "firstName": "Jane",
+    "lastName": "Austen"
+  },
+  {
+    "id": 11,
+    "firstName": "Gabriel",
+    "lastName": "García Márquez"
+  },
+  {
+    "id": 12,
+    "firstName": "Leo",
+    "lastName": "Tolstoy"
+  },
+  {
+    "id": 13,
+    "firstName": "Mark",
+    "lastName": "Twain"
+  },
+  {
+    "id": 14,
+    "firstName": "Fyodor",
+    "lastName": "Dostoevsky"
+  },
+  {
+    "id": 15,
+    "firstName": "Miguel",
+    "lastName": "de Cervantes"
+  },
+  {
+    "id": 16,
+    "firstName": "Emily",
+    "lastName": "Bronte"
+  },
+  {
+    "id": 17,
+    "firstName": "Edgar Allan",
+    "lastName": "Poe"
+  },
+  {
+    "id": 18,
+    "firstName": "Virginia",
+    "lastName": "Woolf"
+  },
+  {
+    "id": 19,
+    "firstName": "Herman",
+    "lastName": "Melville"
+  },
+  {
+    "id": 20,
+    "firstName": "Stieg",
+    "lastName": "Larsson"
+  }
+]
