@@ -45,14 +45,8 @@ public class AuthorsController : ControllerBase
     public async Task<ActionResult<AuthorDto>> AddBook([FromBody] AddAuthorCommand command)
     {
         var result = await _mediator.Send(command);
-        var author = await _mediator.Send(new GetAuthorByIdQuery(result.Id));
 
-        return CreatedAtAction(nameof(GetAuthorById), new { id = result.Id }, new AuthorDto
-        {
-            Id = author.Id,
-            FirstName = author.FirstName,
-            LastName = author.LastName
-        });
+        return CreatedAtAction(nameof(GetAuthorById), new { id = result.Id }, null);
     }
 
     [HttpPatch("{id}")]

@@ -1,3 +1,4 @@
+using FluentValidation;
 using MediatR;
 using vertical_slice_example.Data;
 using vertical_slice_example.Domain;
@@ -10,11 +11,20 @@ public class AddAuthorCommand : IRequest<Author>
     public string LastName { get; set; }
 }
 
-public class AddBookCommandHandler : IRequestHandler<AddAuthorCommand, Author>
+public class AddAuthorCommandValidator : AbstractValidator<AddAuthorCommand>
+{
+    public AddAuthorCommandValidator()
+    {
+        RuleFor(x => x.FirstName).NotEmpty();
+        RuleFor(x => x.LastName).NotEmpty();
+    }   
+}
+
+public class AddAuthorCommandHandler : IRequestHandler<AddAuthorCommand, Author>
 {
     private readonly DataContext _dbContext;
 
-    public AddBookCommandHandler(DataContext dbContext)
+    public AddAuthorCommandHandler(DataContext dbContext)
     {
         _dbContext = dbContext;
     }

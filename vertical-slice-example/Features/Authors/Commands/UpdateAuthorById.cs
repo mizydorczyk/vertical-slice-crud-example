@@ -1,3 +1,4 @@
+using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using vertical_slice_example.Data;
@@ -10,6 +11,15 @@ public class UpdateAuthorByIdCommand : IRequest
     public int Id { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
+}
+
+public class UpdateAuthorByIdCommandValidator : AbstractValidator<UpdateAuthorByIdCommand>
+{
+    public UpdateAuthorByIdCommandValidator()
+    {
+        RuleFor(x => x.FirstName).NotEmpty();
+        RuleFor(x => x.LastName).NotEmpty();
+    }   
 }
 
 public class UpdateAuthorByIdCommandHandler : IRequestHandler<UpdateAuthorByIdCommand>

@@ -1,3 +1,4 @@
+using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using vertical_slice_example.Data;
@@ -16,6 +17,19 @@ public class AddBookCommand : IRequest<Book>
     public int GenreId { get; set; }
 }
 
+public class AddBookCommandValidator : AbstractValidator<AddBookCommand>
+{
+    public AddBookCommandValidator()
+    {
+        RuleFor(x => x.Title).NotEmpty();
+        RuleFor(x => x.Publisher).NotEmpty();
+        RuleFor(x => x.Description).NotEmpty();
+        RuleFor(x => x.ReleaseDate).NotEmpty();
+        RuleFor(x => x.AuthorId).NotEmpty();
+        RuleFor(x => x.GenreId).NotEmpty();
+    }   
+}
+
 public class AddBookCommandHandler : IRequestHandler<AddBookCommand, Book>
 {
     private readonly DataContext _dbContext;
@@ -29,7 +43,7 @@ public class AddBookCommandHandler : IRequestHandler<AddBookCommand, Book>
     {
         if (await _dbContext.Authors.FirstOrDefaultAsync(x => x.Id == request.AuthorId) == null) throw new NotFoundException("AuthorId is incorrect");
 
-        if (await _dbContext.Genres.FirstOrDefaultAsync(x => x.Id == request.AuthorId) == null) throw new NotFoundException("GenreId is incorrect");
+        if (await _dbContext.Genres.FirstOrDefaultAsync(x => x.Id == request.GenreId) == null) throw new NotFoundException("GenreId is incorrect");
 
         var book = new Book
         {
