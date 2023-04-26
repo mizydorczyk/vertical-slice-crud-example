@@ -1,21 +1,20 @@
 using Microsoft.EntityFrameworkCore;
 using vertical_slice_example.Data;
 using vertical_slice_example.Extensions;
+using vertical_slice_example.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerDocumentation();
-builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.RegisterServices(builder.Configuration);
 
 var app = builder.Build();
 
 app.UseSwaggerDocumentation();
 
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
 app.MapControllers();
 
 using (var scope = app.Services.CreateScope())

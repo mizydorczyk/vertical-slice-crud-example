@@ -4,7 +4,7 @@ using vertical_slice_example.Domain;
 
 namespace vertical_slice_example.Data.Configurations;
 
-public class GenreConfiguration: IEntityTypeConfiguration<Genre>
+public class GenreConfiguration : IEntityTypeConfiguration<Genre>
 {
     public void Configure(EntityTypeBuilder<Genre> builder)
     {

@@ -16,6 +16,6 @@ public class BookConfiguration : IEntityTypeConfiguration<Book>
         builder.Property(x => x.GenreId).IsRequired();
 
         builder.HasOne(x => x.Author).WithMany(x => x.Books).HasForeignKey(x => x.AuthorId).OnDelete(DeleteBehavior.Cascade);
-        builder.HasOne(x => x.Genre).WithMany(x => x.Books).HasForeignKey(x => x.GenreId);
+        builder.HasOne(x => x.Genre).WithMany(x => x.Books).HasForeignKey(x => x.GenreId).OnDelete(DeleteBehavior.Cascade);
     }
 }

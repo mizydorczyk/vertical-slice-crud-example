@@ -33,7 +33,7 @@ namespace vertical_slice_example.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Authors");
+                    b.ToTable("Authors", (string)null);
                 });
 
             modelBuilder.Entity("vertical_slice_example.Domain.Book", b =>
@@ -69,7 +69,7 @@ namespace vertical_slice_example.Data.Migrations
 
                     b.HasIndex("GenreId");
 
-                    b.ToTable("Books");
+                    b.ToTable("Books", (string)null);
                 });
 
             modelBuilder.Entity("vertical_slice_example.Domain.Genre", b =>
@@ -84,7 +84,7 @@ namespace vertical_slice_example.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genres");
+                    b.ToTable("Genres", (string)null);
                 });
 
             modelBuilder.Entity("vertical_slice_example.Domain.Book", b =>
