@@ -1,4 +1,4 @@
-namespace vertical_slice_example.Features.Genres;
+namespace vertical_slice_example.Features.Genres.Queries;
 
 public class GenreDto
 {

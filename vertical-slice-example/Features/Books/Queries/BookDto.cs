@@ -1,4 +1,4 @@
-namespace vertical_slice_example.Features.Books;
+namespace vertical_slice_example.Features.Books.Queries;
 
 public class BookDto
 {

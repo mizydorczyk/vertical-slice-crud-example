@@ -1,4 +1,4 @@
-namespace vertical_slice_example.Features.Authors;
+namespace vertical_slice_example.Features.Authors.Queries;
 
 public class AuthorDto
 {
